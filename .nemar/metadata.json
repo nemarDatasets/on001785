@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Evidence accumulation relates to perceptual consciousness and monitoring",
+  "description": "This dataset contains electroencephalographic (EEG) and electrocorticographic (ECoG) recordings from twenty healthy participants and one patient with intractable epilepsy during a tactile detection task with confidence reporting. The study investigates the relationship between evidence accumulation, perceptual consciousness, and metacognitive monitoring using vibrotactile stimuli applied to the wrist with adaptive stimulus intensity. Data were acquired using 62-channel EEG (10-20 montage) at 1024 Hz and intracranial ECoG recordings at 2048 Hz, supporting analyses of neural correlates of perceptual decision-making and conscious awareness.",
+  "methods_description": "EEG data were acquired from 62 active electrodes (10-20 montage) using a WaveGuard cap and amplifier (ANTNeuro) at 1024 Hz sampling rate, with bipolar EOG recordings. Vibrotactile stimuli (230 Hz sinusoid, 100 ms duration) were applied to the right wrist using an MMC3 Haptuator device. Individual detection thresholds were established using an adaptive staircase procedure. The main experiment consisted of 500 trials across 10 blocks (~2 hours), with participants reporting stimulus detection and confidence on a visual analog scale. For the patient, ECoG data were recorded from a 24-electrode grid covering left hemisphere premotor to superior parietal regions at 2048 Hz sampling rate.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,12 +20,34 @@
     "Olaf Blanke": {},
     "Nathan Faivre": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds001785.v1.1.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "electrocorticography"
+    },
+    {
+      "term": "tactile perception"
+    },
+    {
+      "term": "Consciousness",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003243"
+    },
+    {
+      "term": "metacognition"
+    },
+    {
+      "term": "Decision Making",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
+    },
+    {
+      "term": "evidence accumulation"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on001785",
       "identifier_type": "URL",
@@ -38,6 +62,11 @@
       "identifier": "10.1038/s41467-021-22510-8",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds001785.v1.1.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -54,13 +83,13 @@
       "funder_name": "European Research Council"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg",
     "ieeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "29.8 GB (149 files)"
   ],
   "formats": [
     ".TRC",
@@ -70,43 +99,8 @@
     ".md",
     ".set",
     ".tsv",
-    ".txt"
+    ".txt",
+    ".yml"
   ],
-  "description": "This dataset contains electroencephalographic recordings from twenty healthy participants and one patient with intractable epilepsy during a tactile detection task designed to investigate the relationship between evidence accumulation, perceptual consciousness, and metacognitive monitoring. Participants performed a vibrotactile detection task with adaptive stimulus intensity while reporting both detection and confidence judgments, enabling investigation of neural correlates of perceptual decision-making and metacognition.",
-  "methods_description": "EEG data were acquired from 62 active electrodes (10-20 montage) using a WaveGuard cap and amplifier (ANTNeuro) at 1024 Hz sampling rate, with bipolar EOG recordings and audio signal from the vibrotactile actuator recorded as reference. Tactile stimuli were delivered to the right wrist using a MMC3 Haptuator vibrotactile device driven by a 230 Hz sinusoid lasting 100 ms. Participants completed 500 trials across 10 blocks, reporting stimulus detection and confidence on visual analog scales. One patient underwent ECoG recording using a 24-electrode grid at 2048 Hz sampling rate.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "tactile perception"
-    },
-    {
-      "term": "consciousness"
-    },
-    {
-      "term": "metacognition"
-    },
-    {
-      "term": "evidence accumulation"
-    },
-    {
-      "term": "decision-making"
-    },
-    {
-      "term": "ECoG"
-    },
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "somatosensory"
-    }
-  ],
-  "source_hash": "63603fbd65f229681ba17fba14a3aedaa392d9b8f63c557b2b6298844f10165a"
+  "source_hash": "53d6f975e3db79cb71d335db9c614fffbba419d68316b962795439ec4f74d332"
 }
