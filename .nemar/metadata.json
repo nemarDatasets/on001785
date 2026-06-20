@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on001785",
-  "source": "openneuro",
-  "source_id": "ds001785",
+  "pipeline_stage": "validated",
   "title": "Evidence accumulation relates to perceptual consciousness and monitoring",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Michael Pereira": {},
     "Pierre Mégevand": {},
@@ -18,24 +18,27 @@
     "Olaf Blanke": {},
     "Nathan Faivre": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds001785.v1.1.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on001785",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on001785",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41467-021-22510-8",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.1.1",
-  "recording_modality": [
-    "eeg",
-    "ieeg"
-  ],
-  "datatypes": [
-    "eeg",
-    "ieeg"
   ],
   "funding_references": [
     {
@@ -45,7 +48,65 @@
       "funder_name": "Swiss National Science Foundation"
     },
     {
-      "funder_name": "European Research Council (ERC)"
+      "funder_name": "European Research Council (ERC) "
+    },
+    {
+      "funder_name": "European Research Council"
     }
-  ]
+  ],
+  "modalities": [
+    "eeg",
+    "ieeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".TRC",
+    ".fdt",
+    ".gitattributes",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv",
+    ".txt"
+  ],
+  "description": "This dataset contains electroencephalographic recordings from twenty healthy participants and one patient with intractable epilepsy during a tactile detection task designed to investigate the relationship between evidence accumulation, perceptual consciousness, and metacognitive monitoring. Participants performed a vibrotactile detection task with adaptive stimulus intensity while reporting both detection and confidence judgments, enabling investigation of neural correlates of perceptual decision-making and metacognition.",
+  "methods_description": "EEG data were acquired from 62 active electrodes (10-20 montage) using a WaveGuard cap and amplifier (ANTNeuro) at 1024 Hz sampling rate, with bipolar EOG recordings and audio signal from the vibrotactile actuator recorded as reference. Tactile stimuli were delivered to the right wrist using a MMC3 Haptuator vibrotactile device driven by a 230 Hz sinusoid lasting 100 ms. Participants completed 500 trials across 10 blocks, reporting stimulus detection and confidence on visual analog scales. One patient underwent ECoG recording using a 24-electrode grid at 2048 Hz sampling rate.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "tactile perception"
+    },
+    {
+      "term": "consciousness"
+    },
+    {
+      "term": "metacognition"
+    },
+    {
+      "term": "evidence accumulation"
+    },
+    {
+      "term": "decision-making"
+    },
+    {
+      "term": "ECoG"
+    },
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "somatosensory"
+    }
+  ],
+  "source_hash": "63603fbd65f229681ba17fba14a3aedaa392d9b8f63c557b2b6298844f10165a"
 }
