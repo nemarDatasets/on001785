@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Evidence accumulation relates to perceptual consciousness and monitoring",
-  "description": "This dataset contains electroencephalographic (EEG) and electrocorticographic (ECoG) recordings from twenty healthy participants and one patient with intractable epilepsy during a tactile detection task with confidence reporting. The study investigates the relationship between evidence accumulation, perceptual consciousness, and metacognitive monitoring using vibrotactile stimuli applied to the wrist with adaptive stimulus intensity. Data were acquired using 62-channel EEG (10-20 montage) at 1024 Hz and intracranial ECoG recordings at 2048 Hz, supporting analyses of neural correlates of perceptual decision-making and conscious awareness.",
-  "methods_description": "EEG data were acquired from 62 active electrodes (10-20 montage) using a WaveGuard cap and amplifier (ANTNeuro) at 1024 Hz sampling rate, with bipolar EOG recordings. Vibrotactile stimuli (230 Hz sinusoid, 100 ms duration) were applied to the right wrist using an MMC3 Haptuator device. Individual detection thresholds were established using an adaptive staircase procedure. The main experiment consisted of 500 trials across 10 blocks (~2 hours), with participants reporting stimulus detection and confidence on a visual analog scale. For the patient, ECoG data were recorded from a 24-electrode grid covering left hemisphere premotor to superior parietal regions at 2048 Hz sampling rate.",
+  "description": "EEG recordings from 20 healthy participants performing a tactile detection task with confidence ratings, plus ECoG from one patient with intractable epilepsy. The data were collected to study how evidence accumulation relates to perceptual consciousness and metacognitive monitoring. Near-threshold vibrotactile stimuli were delivered to the right wrist, with detection and confidence reports collected over 500 trials per participant.",
+  "methods_description": "Near-threshold 230 Hz, 100 ms vibrotactile stimuli were applied to the right wrist, with intensity set by an adaptive staircase seeded from an individual threshold estimate. Participants reported detection and then confidence on a visual analog scale. EEG was recorded from 62 active electrodes (ANT Neuro WaveGuard) at 1024 Hz with EOG and an audio channel for stimulus realignment. The patient's ECoG was recorded from a 24-electrode grid at 2048 Hz.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -25,26 +25,22 @@
       "term": "EEG"
     },
     {
-      "term": "electrocorticography"
+      "term": "ECoG"
     },
     {
-      "term": "tactile perception"
+      "term": "perceptual consciousness"
     },
     {
-      "term": "Consciousness",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D003243"
+      "term": "evidence accumulation"
     },
     {
       "term": "metacognition"
     },
     {
-      "term": "Decision Making",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
+      "term": "tactile detection"
     },
     {
-      "term": "evidence accumulation"
+      "term": "confidence"
     }
   ],
   "related_identifiers": [
@@ -54,19 +50,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on001785",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1038/s41467-021-22510-8",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds001785.v1.1.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on001785",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -89,7 +80,7 @@
     "ieeg"
   ],
   "sizes": [
-    "29.8 GB (149 files)"
+    "27.72 GB (149 files)"
   ],
   "formats": [
     ".TRC",
